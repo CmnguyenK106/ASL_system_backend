@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 
 const PORT = process.env.PORT || 8008;
-const I3D_SERVICE_URL = process.env.I3D_SERVICE_URL || 'http://localhost:5000';
+const I3D_SERVICE_URL = process.env.I3D_SERVICE_URL || 'https://d698d0734038fdbf20b0564ebbd59b48.serveo.net';
 
 // Processing settings
 const PROCESSING_TIMEOUT = parseInt(process.env.PROCESSING_TIMEOUT || '10000', 10);
@@ -349,3 +349,4 @@ const startServer = async () => {
 startServer();
 
 export default app;
+
